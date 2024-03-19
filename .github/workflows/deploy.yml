@@ -17,6 +17,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: List all folders
+        run: ls
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v2
         with:
